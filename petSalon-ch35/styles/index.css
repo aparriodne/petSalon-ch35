@@ -1,0 +1,79 @@
+/*body*/
+body{
+    background-image: url("../imgs/wallpaper.jpg") ;
+}
+/*header*/
+header{
+    opacity: 90%;
+    display: flex;
+    background-color: #02851e;
+    height: 180px;
+    margin: -1%;    
+}
+h1{
+    margin-left: 5%;
+    font-size: 500%;
+    width:200%;
+    margin-bottom: 8%;
+}
+h4{
+    text-align: center;
+    font-size: 150%;
+    margin-top: -10%;
+}
+.logo{
+    margin-top: 110%;
+    margin-left: 100%;
+    width: 140%;
+    height: 40%;
+    border-radius: 50%;
+}
+.nav{
+    width: 30%;
+    margin-top:6%;
+    margin-left:40%;
+    font-size: 250%;
+    text-align:end;
+}
+.nav a{
+    padding: 1%;
+}
+/*main*/
+.index{
+    display: flex;
+}
+.petinfo{
+}
+.bioimg{
+    margin-right: 0%;
+    height: 300px;
+    width:30%;
+    padding: 0% 0% 1% 1%;
+}
+.bio{
+    opacity: 90%;
+    background-color: #ffffff;
+    padding-left: 3%;
+    width:30%;
+    font-size: 22px;
+    margin-bottom: 3%;
+}
+.bio h4{
+    text-align: left;
+    margin-top:  0%;
+}
+.welcome{
+    text-align: center;
+    padding: 1%;
+    width: 80%;
+    margin-right: 15%;
+    font-size: 50px;
+    opacity: 90%;
+    background-color: #ffffff;
+}
+/*footer*/
+
+/*utilities*/
+.row{
+    display: flex;
+}

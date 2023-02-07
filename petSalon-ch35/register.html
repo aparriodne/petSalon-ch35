@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/register.css">
+    <link rel="stylesheet" href="styles/displayPets.css">
+    <title>Scales N' Tales</title>
+</head>
+<body>
+    <header id="petReg">
+        <h1>Lorem ipsum dolor.</h1>
+        <nav>
+           <a href="index.html">home</a> 
+           <a href="about.html">about</a> 
+           <a href="services.html">services</a> 
+           <a href="register.html">register</a> 
+        </nav>
+    </header>
+    <main>
+        <h2>Register a new pet</h2>
+        <p> Pet appoinments : <span id="petNum"></span></p>
+        <div>
+            <lable>Name:</lable>
+            <input type="text" id="txtName">
+        </div>
+        <div>
+            <lable>Age:</lable>
+            <input type="text" id="txtAge">
+        </div>
+        <div>
+            <lable>Gender:</lable>
+            <input type="text" id="txtGen">
+        </div>
+        <div>
+            <lable>Breed:</lable>
+            <input type="text" id="txtBreed">
+        </div>
+        <div>
+            <lable>Owner:</lable>
+            <input type="text" id="txtOwner">
+        </div>
+        <div>
+            <lable>Phone Number:</lable>
+            <input type="text" id="txtPhone">
+        </div>
+        <div>
+            <lable class="">Species:</lable>
+            <select class="" type="text" id="txtType">
+                <option value="" disabled selected>--Select Option--</option>
+                <option value="reptile">Reptile</option>
+                <option value="bird">Bird</option>
+                <option value="fish">Fish</option>
+            </select>
+         </div>
+        <div>
+            <lable class="">Service:</lable>
+            <select class="" type="text" id="txtServ">
+                <option value="" disabled selected>--Select Option--</option>
+                <option value="Clsw trim">Claw Trim</option>
+                <option value="Beak file">Beak File</option>
+                <option value="Scale scrub">Scale Scrub</option>
+            </select>
+            <br>
+            <button onclick="register();">Register</button>
+        </div>
+        <div id="pets">
+
+        </div>
+    </main>
+    <footer></footer>
+</body>
+<script src="scripts/register.js"></script>
+<script src="scripts/displayPets.js"></script>
+</html>
