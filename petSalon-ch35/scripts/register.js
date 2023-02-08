@@ -76,11 +76,11 @@ function register(){
     salon.push(newPet);
     updateInfo();
     displayPetCards();
-    clearForm();
     
-    }else{
-        alert("Please fill out form");
-    }
+}else{
+    alert("Please fill out form");
+}
+clearForm();
 }
 
 function updateInfo(){
