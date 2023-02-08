@@ -5,12 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/register.css">
-    <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/all.css">
         <link rel="stylesheet" href="styles/displayPets.css">
-    <script src="https://kit.fontawesome.com/81b8868fb1.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/81b8868fb1.js" crossorigin="anonymous"></script>
         <title>Scales N' Tales</title>
-    </head>
-    <body>
+</head>
+<body>
+    <div class="all">
         <header>
             <div class="title">
                 <h1>Scales N' Tales</h1>
@@ -26,8 +27,8 @@
             <a href="register.html">Register<i class="fa-solid fa-cash-register"></i></a> 
             </nav>
         </header>
-        <main>
-            <h2>Register a new pet</h2>
+<main>
+    <h2>Register a new pet</h2>
             <p> Pet appoinments : <span id="petNum"></span></p>
             <div>
                 <lable>Name:</lable>
@@ -61,7 +62,7 @@
                     <option value="bird">Bird</option>
                     <option value="fish">Fish</option>
                 </select>
-             </div>
+            </div>
             <div>
                 <lable class="">Service:</lable>
                 <select class="" type="text" id="txtServ">
@@ -74,7 +75,7 @@
                 <button onclick="register();">Register</button>
             </div>
             <div id="pets">
-
+                
             </div>
         </main>
         <footer id="operate">
@@ -84,5 +85,32 @@
         <script src="scripts/displayPets.js"></script>
         <script src="scripts/hours.js"></script>
     </body>
-</html>
-    
+    </html>
+    <!--
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/header.css">
+        <script src="https://kit.fontawesome.com/81b8868fb1.js" crossorigin="anonymous"></script>
+            <title>Scales N' Tales</title>
+        </head>
+        <body>
+            <header>
+                <div class="title">
+                    <h1>Scales N' Tales</h1>
+                    <h4>Exotic Pet Salon</h4>
+                </div>
+                <div>
+                <img src="imgs/snt-logo.jpg" alt="logo" class="logo">
+                </div>
+                <nav class="nav">
+                <a href="index.html">Home<i class="fa-solid fa-house"></i></a> 
+                <a href="about.html">About<i class="fa-solid fa-users"></i></a> 
+                <a href="services.html">Services<i class="fa-solid fa-bell-concierge"></i></a> 
+                <a href="register.html">Register<i class="fa-solid fa-cash-register"></i></a> 
+                </nav>
+            </header>
+        -->
