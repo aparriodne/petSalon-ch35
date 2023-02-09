@@ -2,3 +2,33 @@
     background-color: pink;
     border: 1px solid red;
 }
+.petList{
+    margin-top: 10%;
+    width:50%;
+    align-items:;
+}
+.regSpace{
+    margin: 10%;
+    font-size: 30px;
+}
+input{
+    block-size: 30px;
+}
+.regSpace div{
+    margin: 3px;
+}
+main div {
+align-items:end;
+}
+.regSpace{
+    background-color: green;
+    opacity: 90%;
+    padding: 90px;
+}
+.regBtn{
+    background-color: orange;
+    font-size:30px;
+    margin: 50px;
+    margin-left: 100px;
+}
+

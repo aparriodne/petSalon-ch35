@@ -9,9 +9,8 @@
         <link rel="stylesheet" href="styles/displayPets.css">
         <script src="https://kit.fontawesome.com/81b8868fb1.js" crossorigin="anonymous"></script>
         <title>Scales N' Tales</title>
-</head>
-<body>
-    <div class="all">
+    </head>
+    <body>
         <header>
             <div class="title">
                 <h1>Scales N' Tales</h1>
@@ -27,90 +26,82 @@
             <a href="register.html">Register<i class="fa-solid fa-cash-register"></i></a> 
             </nav>
         </header>
-<main>
-    <h2>Register a new pet</h2>
-            <p> Pet appoinments : <span id="petNum"></span></p>
-            <div>
-                <lable>Name:</lable>
-                <input type="text" id="txtName">
+        <main class="row">
+            <div class="regSpace">
+                <h2>Register a new pet</h2>
+                <p> Pet appoinments : <span id="petNum"></span></p>
+                <div>
+                    <lable>Name:</lable>
+                    <input type="text" id="txtName">
+                </div>
+                <div>
+                    <lable>Age:</lable>
+                    <input type="text" id="txtAge">
+                </div>
+                <div>
+                    <lable>Gender:</lable>
+                    <input type="text" id="txtGen">
+                </div>
+                <div>
+                    <lable>Breed:</lable>
+                    <input type="text" id="txtBreed">
+                </div>
+                <div>
+                    <lable>Owner:</lable>
+                    <input type="text" id="txtOwner">
+                </div>
+                <div>
+                    <lable>Phone Number:</lable>
+                    <input type="text" id="txtPhone">
+                </div>
+                <div>
+                    <lable class="">Species:</lable>
+                    <select class="" type="text" id="txtType">
+                        <option value="" disabled selected>--Select Option--</option>
+                        <option value="reptile">Reptile</option>
+                        <option value="bird">Bird</option>
+                        <option value="fish">Fish</option>
+                    </select>
+                </div>
+                <div>
+                    <lable class="">Service:</lable>
+                    <select class="" type="text" id="txtServ">
+                        <option value="" disabled selected>--Select Option--</option>
+                        <option value="Clsw trim">Claw Trim</option>
+                        <option value="Beak file">Beak File</option>
+                        <option value="Scale scrub">Scale Scrub</option>
+                    </select>
+                    <br>
+                    <button class="regBtn" onclick="register();">Register</button>
+                </div>
             </div>
-            <div>
-                <lable>Age:</lable>
-                <input type="text" id="txtAge">
-            </div>
-            <div>
-                <lable>Gender:</lable>
-                <input type="text" id="txtGen">
-            </div>
-            <div>
-                <lable>Breed:</lable>
-                <input type="text" id="txtBreed">
-            </div>
-            <div>
-                <lable>Owner:</lable>
-                <input type="text" id="txtOwner">
-            </div>
-            <div>
-                <lable>Phone Number:</lable>
-                <input type="text" id="txtPhone">
-            </div>
-            <div>
-                <lable class="">Species:</lable>
-                <select class="" type="text" id="txtType">
-                    <option value="" disabled selected>--Select Option--</option>
-                    <option value="reptile">Reptile</option>
-                    <option value="bird">Bird</option>
-                    <option value="fish">Fish</option>
-                </select>
-            </div>
-            <div>
-                <lable class="">Service:</lable>
-                <select class="" type="text" id="txtServ">
-                    <option value="" disabled selected>--Select Option--</option>
-                    <option value="Clsw trim">Claw Trim</option>
-                    <option value="Beak file">Beak File</option>
-                    <option value="Scale scrub">Scale Scrub</option>
-                </select>
-                <br>
-                <button onclick="register();">Register</button>
-            </div>
-            <div id="pets">
-                
+            <div class="petList" id="pets">
+                <div>
+                    <input id="txtSearch" type="search" placeholder="Search">
+                    <button  onclick="search()">Search</button>
+                </div>
+                <table>
+                    <thead>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Breed</th>
+                        <th>Owner</th>
+                        <th>Phone</th>
+                        <th>Type</th>
+                        <th>Service</th>
+                        <th>Cancle</th>
+                    </thead>
+                    <tbody id="tableList">
+                    </tbody>
+                </table>
             </div>
         </main>
         <footer id="operate">
             Hours of operation
         </footer >
-        <script src="scripts/register.js"></script>
-        <script src="scripts/displayPets.js"></script>
         <script src="scripts/hours.js"></script>
+        <script src="scripts/displayPets.js"></script>
+        <script src="scripts/register.js"></script>
     </body>
     </html>
-    <!--
-    <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/header.css">
-        <script src="https://kit.fontawesome.com/81b8868fb1.js" crossorigin="anonymous"></script>
-            <title>Scales N' Tales</title>
-        </head>
-        <body>
-            <header>
-                <div class="title">
-                    <h1>Scales N' Tales</h1>
-                    <h4>Exotic Pet Salon</h4>
-                </div>
-                <div>
-                <img src="imgs/snt-logo.jpg" alt="logo" class="logo">
-                </div>
-                <nav class="nav">
-                <a href="index.html">Home<i class="fa-solid fa-house"></i></a> 
-                <a href="about.html">About<i class="fa-solid fa-users"></i></a> 
-                <a href="services.html">Services<i class="fa-solid fa-bell-concierge"></i></a> 
-                <a href="register.html">Register<i class="fa-solid fa-cash-register"></i></a> 
-                </nav>
-            </header>
-        -->

@@ -1,4 +1,6 @@
-
+body{
+    background-image: url("../imgs/wallpaper.jpg") ;
+}
 header{
     opacity: 90%;
     display: flex;
@@ -33,4 +35,8 @@ h4{
 }
 .nav a{
     padding: 1%;
+}
+/*utilities*/
+.row{
+    display: flex;
 }

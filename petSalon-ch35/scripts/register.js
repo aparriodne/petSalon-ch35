@@ -75,7 +75,8 @@ function register(){
 
     salon.push(newPet);
     updateInfo();
-    displayPetCards();
+    //displayPetCards();
+    displayPetTable();
     
 }else{
     alert("Please fill out form");
@@ -85,6 +86,33 @@ clearForm();
 
 function updateInfo(){
     document.getElementById("petNum").innerHTML=salon.length;
+}
+
+function delPet(name){
+
+   if( !confirm("Remove " + name + "from Registration?")){
+    return;
+   }
+   
+    for(let n = 0; n< salon.length; n++){
+        const pet = salon.length[n];
+        if (pet.name.toLowerCase().includes(text.toLowerCase()) ) {
+            result.push(pet);
+        }
+    }
+}
+
+function search(){
+    let text = document.getElementById("txtSearch").value;
+
+    let results = [];
+    for(let s=0; s <salon.length; s++){
+        const pet = salon.length[s];
+        if(pet.name === text){
+            results.push(pet);
+        }
+    }
+    console.log(results);
 }
 
 function clearForm(){
@@ -104,7 +132,8 @@ let gustav = new petInfo("Gustav",29,"male","Goldfish","Fish","Scale Brushing","
 let sam = new petInfo("Sam",10,"male","tuocan","Bird","Beak filing","Manuel","800-962-1413");
 salon.push(sam,gustav,guazilla);
 updateInfo();
-displayPetCards();
+//displayPetCards();
+displayPetTable();
 
 }
 window.onload=init;
