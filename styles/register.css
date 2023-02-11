@@ -3,3 +3,74 @@
     background-color: pink;
     border: 1px solid red;
 }
+/* top */
+.subTitle{
+}
+ .subTitle{
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+}
+.regNDis{
+    display:flex ;
+    width: 90%;
+}
+
+
+
+/* register box */
+.container{
+    width: 40%;
+}
+
+/* search box */
+.petCage{
+    width: 40%;
+}
+
+label{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.btn-success{
+    background-color: rgba(0, 0, 0, 0.582);
+    color:  rgb(202, 131, 0);
+
+}
+.glass{
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 20%;
+    color: rgb(202, 131, 0);
+}
+.table{
+    border: 7px solid black;
+}
+.table-top{
+    border-bottom: 5px solid black;
+    background-color: rgb(202, 131, 0);
+}
+.table-data{
+    background-color: rgba(255, 255, 255, 0.733);
+}
+.petBoard{
+    font-weight: 700;
+    font-size: 20px;
+    border-bottom: 3px solid black;
+}
+
+@media(max-width: 868px){
+    .regNDis{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+    }
+    .petCage{
+        margin-left: 40px;
+    }
+   
+    
+}

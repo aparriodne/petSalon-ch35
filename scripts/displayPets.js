@@ -26,7 +26,7 @@ function displayPetTable(){
     for(let p=0;p<pets.length;p++){
         let pet = pets[p];
         rows +=`
-        <tr>
+        <tr class="petBoard">
             <td>${pet.name}</td>
             <td>${pet.age}</td>
             <td>${pet.gender}</td>
