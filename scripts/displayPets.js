@@ -1,23 +1,3 @@
-// function displayPetCards(){
-
-//     const DIV = document.getElementById("petCard");
-//     let card="";
-//     for(let p=0;p<pets.length;p++){
-//         let pet = pets[p];
-//         card += `
-//         <div class="pet">
-//             <h3>${pet.name}</h3>
-//             <p>Age:${pet.age}</p>
-//             <p>Gender:${pet.gender}</p>
-//             <p>Breed:${pet.breed}</p>
-//             <p>Owner:${pet.owner}</p>
-//             <p>Phone Number:${pet.phone}</p>
-//             <p>Species:${pet.type}</p>
-//             <p>Service:${pet.service}</p>
-//         </div>`;
-//     }
-//     DIV.innerHTML=card; 
-// }
 
 function displayPetTable(){
 
