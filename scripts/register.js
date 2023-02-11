@@ -43,6 +43,14 @@ function deletePet(name){
 // validate entry
 function isValid(aPet){
     let valid = true;
+    inputName.classList.remove("input-alert-error")
+    inputAge.classList.remove("input-alert-error")
+    inputService.classList.remove("input-alert-error")
+    inputGender.classList.remove("input-alert-error")
+    inputBreed.classList.remove("input-alert-error")
+    inputType.classList.remove("input-alert-error")
+    inputOwner.classList.remove("input-alert-error")
+    inputPhone.classList.remove("input-alert-error")
     if(aPet.name === ""){
         valid=false;
         inputName.classList.add("input-alert-error");
@@ -153,3 +161,4 @@ function init(){
 
 // initial loading action
  window.onload=init;
+ 
