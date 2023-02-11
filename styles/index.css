@@ -1,0 +1,48 @@
+main{
+    margin-top: 50px;
+}
+
+.homePg{
+    display: flex;
+}
+/* hp1 */
+.factContainer{
+    width: 40%;
+    margin-right: 5%;
+    margin-left: 5%;
+
+}
+/* animal and fact container */
+.animalFacts{
+    display:flex ;
+    margin-bottom: 10px;
+}
+/* afc1 */
+.bioimg{
+    border-radius: 10% 0% 0% 10%;
+    width:50%;
+    border: 30px solid rgb(202, 131, 0);
+}
+/* afc2 */
+.bio{
+    border-radius: 0% 10% 10% 0%;
+    opacity: 90%;
+    background-color: #ffffff;
+    width:50%;
+    padding: 20px;
+    font-size: 22px;
+}
+/* hp2 */
+.greeting{
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 40%;
+}
+.greetMsg{
+    border-radius: 10%;
+    text-align: center;
+    font-size: 45px;
+    opacity: 90%;
+    background-color: #ffffff;
+    padding: 50px;
+}
