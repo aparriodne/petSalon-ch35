@@ -1,44 +1,50 @@
-main{
+main {
     margin-top: 50px;
 }
 
-.homePg{
+.homePg {
     display: flex;
 }
+
 /* hp1 */
-.factContainer{
+.factContainer {
     width: 40%;
     margin-right: 5%;
     margin-left: 5%;
 
 }
+
 /* animal and fact container */
-.animalFacts{
-    display:flex ;
+.animalFacts {
+    display: flex;
     margin-bottom: 30px;
 }
+
 /* afc1 */
-.bioimg{
+.bioimg {
     border-radius: 10% 0% 0% 10%;
-    width:50%;
+    width: 50%;
     border: 30px solid rgb(202, 131, 0);
 }
+
 /* afc2 */
-.bio{
+.bio {
     border-radius: 0% 10% 10% 0%;
     opacity: 90%;
     background-color: #ffffff;
-    width:50%;
+    width: 50%;
     padding: 20px;
     font-size: 22px;
 }
+
 /* hp2 */
-.greeting{
+.greeting {
     margin-right: 5%;
     margin-left: 5%;
     width: 40%;
 }
-.greetMsg{
+
+.greetMsg {
     border-radius: 10%;
     text-align: center;
     font-size: 45px;
@@ -47,16 +53,18 @@ main{
     padding: 50px;
 }
 
-@media(max-width: 868px){
-    .homePg{
+@media(max-width: 1200px) {
+    .homePg {
         display: flex;
         flex-direction: column;
 
     }
-    .factContainer{
-        width:90%;
+
+    .factContainer {
+        width: 90%;
     }
-    .greeting{
+
+    .greeting {
         width: 90%;
     }
 }

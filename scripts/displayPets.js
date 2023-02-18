@@ -1,6 +1,5 @@
 
 function displayPetTable(){
-
     const tbody = document.getElementById("petTable");
     let rows ="";
     for(let p=0;p<pets.length;p++){
@@ -15,10 +14,9 @@ function displayPetTable(){
             <td>${pet.phone}</td>
             <td>${pet.type}</td>
             <td>${pet.service}</td>
-            <td><button class="btn btn-sm btn-outline-danger" onclick="deletePet('${pet.name}')">❌</button></td>
+            <td><button class="cancel" onclick="deletePet('${pet.name}')">❌</button></td>
         </tr>
         `;
-
 }
     tbody.innerHTML=rows;
 }

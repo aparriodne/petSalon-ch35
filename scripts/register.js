@@ -26,7 +26,6 @@ function petInfo(n,a,g,b,s,t,o,p){
 }
 
 function deletePet(name){
-
    if( !confirm("Press OK to DELETE "+name+"'s appointment?")){
     return;
    }
@@ -58,56 +57,45 @@ function isValid(aPet){
     if(aPet.service === "-- Select option --"){
         valid=false;
         inputService.classList.add("input-alert-error");
-
     }
     if(aPet.age === ""){
         valid=false;
         inputAge.classList.add("input-alert-error");
-
     }
     if(aPet.gender === ""){
         valid=false;
         inputGender.classList.add("input-alert-error");
-
     }
     if(aPet.breed === ""){
         valid=false;
         inputBreed.classList.add("input-alert-error");
-
     }
     if(aPet.type === "-- Select option --"){
         valid=false;
         inputType.classList.add("input-alert-error");
-
     }
     if(aPet.owner === ""){
         valid=false;
         inputOwner.classList.add("input-alert-error");
-
     }
     if(aPet.phone === ""){
         valid=false;
         inputPhone.classList.add("input-alert-error");
-
     }
     return valid;
 }
 
 // register pets
 function register(){
-
     let newPet = new petInfo(inputName.value,inputAge.value,inputGender.value,inputBreed.value,inputService.value,inputType.value,inputOwner.value,inputPhone.value,);
-
     if(isValid(newPet)===true){
         pets.push(newPet);
         updateInfo();
         displayPetTable();
         clearInputs();
-
     }else{
         alert("Fill required areas.");
     }   
-
 }
 
 // update info
@@ -125,13 +113,11 @@ function clearInputs(){
     inputType.value = "-- Select option --";
     inputOwner.value = "";
     inputPhone.value = "";
-    
 }
 
 function search(){
     let text = document.getElementById("txtsearch").value;
     let result = [];
-
     for(let r=0;r<pets.length;r++){
         const pet = pets[r];
         if(pet.name.toLowerCase().includes(text.toLowerCase())){
@@ -151,12 +137,9 @@ function init(){
     let sam = new petInfo("Sam",10,"male","tuocan","✂️Trim","🦜Bird","Manuel","800-962-1413");
     // add pet into the array
     pets.push(guazilla,gustav,sam);
-    
     //update count
     updateInfo();
-    displayPetTable(); 
-    
-    
+    displayPetTable();     
 }
 
 // initial loading action
